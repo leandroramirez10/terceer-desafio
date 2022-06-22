@@ -1,0 +1,261 @@
+/* comiezo de cabecera */
+
+body{
+    background-color: burlywood;
+   
+    
+}
+
+
+.cabecera{
+  display: flex;
+  justify-content: center;
+   
+    
+}
+#logo{
+    grid-area: logo;
+}
+a{
+    color: white;
+}
+
+.buscar {
+    display:flex;
+    grid-area: buscar
+    position:realtive;
+    margin:5em auto;
+    width:70%;
+    flex-direction:row;
+    box-shadow:
+     1px 1px 0 darkred,
+     2px 2px 0 darkred,
+     3px 3px 0 darkred,
+     4px 4px 0 darkred,
+     5px 5px 0 darkred,
+     6px 6px 0 darkred,
+     7px 7px 0 darkred
+    ;
+  }
+  
+  .buscar>input[type=text],
+  .buscar>button {
+    display:block;
+    font:1.2em 'Montserrat Alternates';
+  }
+  
+  .buscar>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid darkred;
+  }
+  
+  .buscar>button {
+    padding:0.6em 0.8em;
+    background-color: darkred;
+    color:white;
+    border:none;
+  }
+
+/* comienzo de indice */
+.menu{
+    background-color: black;
+    padding: 20px;
+}
+
+.nav-container{
+    @media (max-width 576px){
+        .nav-container{
+                display: flex;
+                
+        
+        background-color: red;
+    }
+    }
+}
+.indice{
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    /* display: flex;
+    justify-content: space-evenly; */
+     list-style: none; 
+    border-style: solid 1px black; }
+    @media (max-width 500px){
+        .nav-container .menu .contenido .item1, .item2, .item3, .item4, .item5 .link1, .link2, .link3, .link4, .link5{
+                display: flex;
+                background-color: aqua;
+                flex-direction: row;}
+   
+}
+.contenido{
+    display: grid;
+    grid-template-areas: "contenido";
+}
+.item1, .item2, .item3, .item4, .item5{
+    border: 2px solid black;
+    
+    ; 
+}
+.link1, .link2, .link3, .link4, .link5{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: darkred;
+    padding: 30px;
+    text-align: center;
+   
+}
+/* finalizacion de indice */
+
+img{
+    display: flex;
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+
+main{
+    display: flex;
+    justify-content:  row;
+
+}
+
+
+
+
+
+
+.productos-div{
+    background-color: white;
+}
+@media (max-width: 500px){ 
+    .productos-div { 
+        background-color: rgb(65, 65, 65);
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+.libreria{
+    border: 10px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+.footergeneral{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: black; }
+    @media (max-width: 700px){
+        .footergeneral {
+            background-color: rgb(65, 65, 65);
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+   ;
+}
+
+.redes{
+    list-style: none;
+    color: white;
+}
+.horario{
+    list-style: none;
+    color: white;   
+
+}
+
+
+
+
+
+/* productos */
+
+.productos-div{
+    display: grid;
+    grid-row-gap: 1px;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    
+}
+@media (max-width 700px){
+    .productos-div .libreria{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+/* sucursales */
+
+.sucursales{
+   
+     display: flex;
+    text-align: center; 
+}
+
+.palermo{
+    padding-left: 100px;
+}
+.microcentro{
+    padding-left: 100px;
+  
+}
+
+
+
+  .contactogeneral, label{
+      border: 1px solid black;
+      display: grid;
+      justify-content: center;
+      background-color: rgb(194, 63, 63);
+      padding: 20px;
+  }
+
+  label{
+      background-color: rgb(225, 130, 6)
+  }
+
+
+  .sobrenosotros{
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(194, 63, 63);
+    padding: 20px;
+    color: white;
+  }
+  .titulosobrenosotros{
+      text-align: center;
+      text-decoration: underline;
+  }
+
+
+
+
+  
